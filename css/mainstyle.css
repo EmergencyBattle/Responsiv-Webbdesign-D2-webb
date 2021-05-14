@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #313C4A;
+}
+
+header{
+  display: block;
+  width: 100vw;
+}
+
+h1{
+  text-align: center;
+  color: white;
+  font-family: "Berlin Sans FB", "Times New Roman", Times, serif;
+  font-size: 5em;
+}
+
+nav{
+  width: 90vw;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.ul-nav{
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.li-nav{
+  width: 70px;
+  height: 120px;
+  margin: auto;
+  background-color: pink;
+  font-family: "Carlito", Arial, Helvetica, sans-serif;
+  font-size: 1.15em;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 15px;
+}
+
+.ul-nav > .li-nav:nth-of-type(1){
+  background-color: #518AD1;
+}
+
+.ul-nav > .li-nav:nth-of-type(2){
+  background-color: #BC427D;
+}
+
+.ul-nav > .li-nav:nth-of-type(3){
+  background-color: #D7831A;
+}
+
+.ul-nav > .li-nav:nth-of-type(4){
+  background-color: #74D542;
+}
+
+.fa-nav{
+  font-size: 2em;
+}
+
+main{
+  display: block;
+  margin-top: -60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90vw;
+  padding: 5vw;
+  padding-top: 60px;
+  background-color: #FFFFBC;
+  border-radius: 10px;
+}
+
+h2{
+  color: #313C4A;
+  font-family: "Berlin Sans FB", "Times New Roman", Times, serif;
+  font-size: 3em;
+}
+
+.mainp{
+  color: #313C4A;
+  font-family: "Carlito", Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+a:link{
+  color: #328AC9;
+  text-decoration: underline;
+  font-weight: 900;
+}
