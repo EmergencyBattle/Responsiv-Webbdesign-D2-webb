@@ -102,3 +102,25 @@ a:link{
   text-decoration: underline;
   font-weight: 900;
 }
+
+.punktlista{
+  color: #313C4A;
+  font-family: "Carlito", Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.skickaadress{
+  background-color: #518AD1;
+  border-radius: 10px;
+  font-family: "Carlito", Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: white;
+  padding: 6%;
+  padding-left: 12%;
+  padding-right: 12%;
+  letter-spacing: 1.5px;
+  word-spacing: 4px;
+}
