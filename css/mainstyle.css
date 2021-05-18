@@ -11,6 +11,13 @@ header{
   width: 100vw;
 }
 
+footer{
+  color: white;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
 h1{
   text-align: center;
   color: white;
