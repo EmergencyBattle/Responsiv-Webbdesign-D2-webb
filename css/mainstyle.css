@@ -34,11 +34,14 @@ nav{
   list-style-type: none;
 }
 
+.ul-nav > a:link {
+  text-decoration: none;
+}
+
 .li-nav{
   width: 70px;
   height: 120px;
   margin: auto;
-  background-color: pink;
   font-family: "Carlito", Arial, Helvetica, sans-serif;
   font-size: 1.15em;
   font-weight: 900;
@@ -48,19 +51,19 @@ nav{
   padding-top: 15px;
 }
 
-.ul-nav > .li-nav:nth-of-type(1){
+.first-menu{
   background-color: #518AD1;
 }
 
-.ul-nav > .li-nav:nth-of-type(2){
+.second-menu{
   background-color: #BC427D;
 }
 
-.ul-nav > .li-nav:nth-of-type(3){
+.third-menu{
   background-color: #D7831A;
 }
 
-.ul-nav > .li-nav:nth-of-type(4){
+.fourth-menu{
   background-color: #74D542;
 }
 
