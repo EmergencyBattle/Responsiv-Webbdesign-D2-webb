@@ -27,10 +27,13 @@ h1{
 
 nav{
   width: 90vw;
-  max-width: 350px;
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
+}
 
+.fa{
+  margin-bottom: 10px;
 }
 
 .ul-nav{
@@ -56,6 +59,7 @@ nav{
   text-align: center;
   border-radius: 10px;
   padding-top: 15px;
+  line-height: 1.1em;
 }
 
 .first-menu{
