@@ -19,6 +19,73 @@
     line-height: 1.1em;
   }
 
+
+  .desktopgrid{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-areas:
+    "onehd      onehd      aside"
+    "onep       onep       aside"
+    "onepoint   onepoint   onepoint"
+    "twohd      twohd      twohd"
+    "twop       twop       twop"
+    "twopoint   twopoint   twopoint"
+    "threehd    threehd    threehd"
+    "threep     threep     threep"
+    "address    address    address"
+    "fourp      fourp      fourp"
+  }
+
+  .firstheader{
+    grid-area: onehd;
+  }
+
+  .secondheader{
+    grid-area: twohd;
+  }
+
+  .thirdheader{
+    grid-area: threehd;
+  }
+
+  .firstp{
+    grid-area: onep;
+  }
+
+  .secondp{
+    grid-area: twop;
+  }
+
+  .thirdp{
+    grid-area: threep;
+  }
+
+  .fourthp{
+    grid-area: fourp;
+  }
+
+  .firstpunkt{
+    grid-area: onepoint;
+  }
+
+  .secondpunkt{
+    grid-area: twopoint;
+  }
+
+  aside{
+    margin-top: 50px;
+    grid-area: aside;
+  }
+
+  address{
+    grid-area: address;
+  }
+
+  .mainimage{
+    max-height: 40vh;
+    height: auto;
+  }
+
   h1{
     margin-top: 2vh;
     margin-left: 10vw;

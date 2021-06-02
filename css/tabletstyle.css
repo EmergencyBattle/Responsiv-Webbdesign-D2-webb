@@ -16,6 +16,66 @@
     line-height: 1.1em;
   }
 
+  .tabletgrid{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+    "onehd      onehd      onehd"
+    "onep       onep       aside"
+    "onepoint   onepoint   onepoint"
+    "twohd      twohd      twohd"
+    "twop       twop       twop"
+    "twopoint   twopoint   twopoint"
+    "threehd    threehd    threehd"
+    "threep     threep     threep"
+    "address    address    address"
+    "fourp      fourp      fourp"
+  }
+
+  .firstheader{
+    grid-area: onehd;
+  }
+
+  .secondheader{
+    grid-area: twohd;
+  }
+
+  .thirdheader{
+    grid-area: threehd;
+  }
+
+  .firstp{
+    grid-area: onep;
+  }
+
+  .secondp{
+    grid-area: twop;
+  }
+
+  .thirdp{
+    grid-area: threep;
+  }
+
+  .fourthp{
+    grid-area: fourp;
+  }
+
+  .firstpunkt{
+    grid-area: onepoint;
+  }
+
+  .secondpunkt{
+    grid-area: twopoint;
+  }
+
+  aside{
+    grid-area: aside;
+  }
+
+  address{
+    grid-area: address;
+  }
+
   h1{
     font-size: 7em;
   }
