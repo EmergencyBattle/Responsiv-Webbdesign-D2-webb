@@ -108,6 +108,21 @@ h2{
   text-justify: inter-word;
 }
 
+.mainaside{
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.mainpicture{
+  width: 100%;
+}
+
+.mainimage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 a:link{
   color: #328AC9;
   text-decoration: underline;
