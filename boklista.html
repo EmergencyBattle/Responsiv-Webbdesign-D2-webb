@@ -1,12 +1,10 @@
 <!doctype html>
 <html lang="sv">
   <head>
-    <title></title>
-    <!-- Required meta tags -->
+    <title>Boklista</title>
+    <!-- metataggar -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- Custom CSS -->
@@ -14,10 +12,13 @@
     <link rel="stylesheet" href="css/tabletstyle.css">
     <link rel="stylesheet" href="css/desktopstyle.css">
   </head>
+  <!-- sidinnehåll -->
   <body>
+    <!-- titel -->
     <header>
       <h1>Alexandria</h1>
     </header>
+    <!-- meny -->
     <nav>
       <ul class="ul-nav">
         <a href="index.html"><li class="li-nav first-menu"> <i class="fa fa-home fa-nav"></i> </br> HEM</li></a>
@@ -26,6 +27,7 @@
         <a href="om-oss.html"><li class="li-nav fourth-menu"> <i class="fa fa-question-circle fa-nav"></i> </br> OM</br>OSS</li></a>
       </ul>
     </nav>
+    <!-- huvudinnehåll -->
     <main>
       <h2>
         Boklista
@@ -34,60 +36,61 @@
         Nedan hittar du en lista med (typer av) böcker som vi söker just nu. Har du dessutom kurslitteratur, arbetsböcker och oanvända skrivhäften i bra skick är de alltid välkomna. När du har hittat vilka böcker du vill skicka kan du läsa om <a href="skicka.html">hur du skickar in dem här.</a>
       </p>
     </main>
-    <div class="annonsgrid">
-      <section class="bokannons">
-        <section class="bokoverview">
+    <!-- rutnät för bokannonser -->
+    <div class="requestgrid">
+      <!-- bokannons -->
+      <article class="request">
+        <section class="bookoverview">
           <picture>
-            <img src="images/bokomslag.png" alt="bokomslag" class="bokomslag">
+            <img src="images/bookcover.png" alt="bookcover" class="bookcover">
           </picture>
-          <section class="bokinfo">
+          <section class="bookinfo">
             <h3>Läsa och Skriva med Putte Kanin</h3>
             <i>Lisa Andersson</i>
           </section>
         </section>
-        <section class="bokbeskrivning">
+        <section class="bookdescription">
           <p class="mainp">
             Eventuellt tillhörande arbetsbok om i nyskick, önskas av Svenska dagis i USA.
           </p>
         </section>
-      </section>
-
-      <section class="bokannons">
-        <section class="bokoverview">
+      </article>
+      <!-- bokannons -->
+      <article class="request">
+        <section class="bookoverview">
           <picture>
-            <img src="images/bokomslag.png" alt="bokomslag" class="bokomslag">
+            <img src="images/bookcover.png" alt="bookcover" class="bookcover">
           </picture>
-          <section class="bokinfo">
+          <section class="bookinfo">
             <h3>Little Red Riding Hood and Her Friends</h3>
             <i>Bokis Förlag</i>
           </section>
         </section>
-        <section class="bokbeskrivning">
+        <section class="bookdescription">
           <p class="mainp">
             Önskas av Global Tutors.
           </p>
         </section>
-      </section>
-
-      <section class="bokannons">
-        <section class="bokoverview">
+      </article>
+      <!-- bokannons -->
+      <article class="request">
+        <section class="bookoverview">
           <picture>
-            <img src="images/bokomslag.png" alt="bokomslag" class="bokomslag">
+            <img src="images/bookcover.png" alt="bookcover" class="bookcover">
           </picture>
-          <section class="bokinfo">
+          <section class="bookinfo">
             <h3>Noveller och romaner på flera språk</h3>
             <i></i>
           </section>
         </section>
-        <section class="bokbeskrivning">
+        <section class="bookdescription">
           <p class="mainp">
             Böcker på engelska, isiZulu, isiXhosa, Afrikaans, Sepedi, Setswana, Sesotho, Xitsonga, siSwati (Swazi), Tshivenda eller isiNdebele önskas av Sydafrikas Biblioteksförbund.
           </p>
         </section>
-      </section>
+      </article>
     </div>
-
-
+    <!-- footer -->
     <footer>
       Alexandria AB, copyright 2021.
     </footer>

@@ -1,3 +1,5 @@
+/* CSS-bas för webbplatsen. Använder inte grid för att se till att browsers som inte stöder grid också kan få en fungerande om än simpel layout. */
+/****************** Generell Stil ******************/
 * {
   box-sizing: border-box;
 }
@@ -8,7 +10,19 @@ body{
 
 header{
   display: block;
-  width: 100vw;
+  width: 100%;
+}
+
+main{
+  display: block;
+  margin-top: -60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90vw;
+  padding: 5vw;
+  padding-top: 60px;
+  background-color: #FFFFBC;
+  border-radius: 10px;
 }
 
 footer{
@@ -18,13 +32,42 @@ footer{
   margin-bottom: 10%;
 }
 
+/****************** Text ******************/
 h1{
   text-align: center;
   color: white;
   font-family: "Berlin Sans FB", "Times New Roman", Times, serif;
-  font-size: 5em;
+  font-size: 4em;
 }
 
+h2{
+  color: #313C4A;
+  font-family: "Berlin Sans FB", "Times New Roman", Times, serif;
+  font-size: 2.5em;
+}
+
+h3{
+  color: #313C4A;
+  font-family: "Berlin Sans FB", "Times New Roman", Times, serif;
+  font-size: 1.8em;
+  margin-bottom: -3px;
+}
+
+.mainp{
+  color: #313C4A;
+  font-family: "Carlito", Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+a:link{
+  color: #328AC9;
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+/****************** Menyn ******************/
 nav{
   width: 90vw;
   max-width: 320px;
@@ -82,39 +125,10 @@ nav{
   font-size: 2em;
 }
 
-main{
-  display: block;
-  margin-top: -60px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90vw;
-  padding: 5vw;
-  padding-top: 60px;
-  background-color: #FFFFBC;
-  border-radius: 10px;
-}
-
-h2{
-  color: #313C4A;
-  font-family: "Berlin Sans FB", "Times New Roman", Times, serif;
-  font-size: 3em;
-}
-
-.mainp{
-  color: #313C4A;
-  font-family: "Carlito", Arial, Helvetica, sans-serif;
-  font-size: 1.3em;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.mainaside{
-  width: 100%;
-  margin-bottom: 5%;
-}
-
+/****************** Bild ******************/
 .mainpicture{
   width: 100%;
+  margin-bottom: 5%;
 }
 
 .mainimage{
@@ -123,13 +137,8 @@ h2{
   margin-right: auto;
 }
 
-a:link{
-  color: #328AC9;
-  text-decoration: underline;
-  font-weight: 900;
-}
-
-.punktlista{
+/****************** Skicka-sidan ******************/
+.bulletlist{
   color: #313C4A;
   font-family: "Carlito", Arial, Helvetica, sans-serif;
   font-size: 1.3em;
@@ -137,7 +146,7 @@ a:link{
   text-justify: inter-word;
 }
 
-.skickaadress{
+.mailingaddress{
   background-color: #518AD1;
   border-radius: 10px;
   font-family: "Carlito", Arial, Helvetica, sans-serif;
@@ -151,12 +160,8 @@ a:link{
   word-spacing: 4px;
 }
 
-.bokannons > picture{
-  width: 80px;
-  height: 120px;
-}
-
-.bokoverview{
+/****************** Boklista-sidan ******************/
+.bookoverview{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -165,7 +170,7 @@ a:link{
   margin-bottom: 10px;
 }
 
-.bokannons{
+.request{
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -176,24 +181,22 @@ a:link{
   border-radius: 10px;
 }
 
-.bokomslag{
+.request > picture{
+  width: 80px;
+  height: 120px;
+}
+
+.bookcover{
   width: 80px;
   height: 120px;
   border-radius: 10px;
 }
 
-.bokinfo {
+.bookinfo {
   margin-left: 4vw;
 }
 
-h3{
-  color: #313C4A;
-  font-family: "Berlin Sans FB", "Times New Roman", Times, serif;
-  font-size: 1.8em;
-  margin-bottom: -3px;
-}
-
-.bokinfo > i{
+.bookinfo > i{
   font-family: "Carlito", Arial, Helvetica, sans-serif;
   font-size: 1.5em;
 }

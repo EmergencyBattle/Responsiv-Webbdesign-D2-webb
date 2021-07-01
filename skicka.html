@@ -1,12 +1,10 @@
 <!doctype html>
 <html lang="sv">
   <head>
-    <title></title>
-    <!-- Required meta tags -->
+    <title>Skicka Böcker</title>
+    <!-- metataggar -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- Custom CSS -->
@@ -14,10 +12,13 @@
     <link rel="stylesheet" href="css/tabletstyle.css">
     <link rel="stylesheet" href="css/desktopstyle.css">
   </head>
+  <!-- sidinnehåll -->
   <body>
+    <!-- titel -->
     <header>
       <h1>Alexandria</h1>
     </header>
+    <!-- meny -->
     <nav>
       <ul class="ul-nav">
         <a href="index.html"><li class="li-nav first-menu"> <i class="fa fa-home fa-nav"></i> </br> HEM</li></a>
@@ -26,14 +27,15 @@
         <a href="om-oss.html"><li class="li-nav fourth-menu"> <i class="fa fa-question-circle fa-nav"></i> </br> OM</br>OSS</li></a>
       </ul>
     </nav>
-    <main class="tabletgrid desktopgrid">
+    <!-- huvudinnehåll -->
+    <main class="tabletgrid sendgrid">
       <h2 class="firstheader">
         Hur skickar jag böcker?
       </h2>
       <p class="mainp firstp">
         Om du har hittat böcker som passar in på <a href="boklista.html">de böcker vi söker</a> så är det dags att inspektera dem och förbereda dem för att skickas.
       </p>
-      <ul class="punktlista firstpunkt">
+      <ul class="bulletlist firstpoint">
         <li>Finns alla sidor kvar?</li>
         <li>Är boken relativt hel och ren? Det kan vara okej med några små skador och missfärgning, men det måste gå att läsa hela boken utan större svårigheter.</li>
         <li>Finns det något skrivet i boken? Om det är i blyerts, sudda försiktigt bort så mycket som möjligt. Om det är i bläck, låt det vara kvar, men om det är väldigt mycket kan det hända att boken inte kan användas.</li>
@@ -41,7 +43,7 @@
       <p class="mainp secondp">
         Fyll i en lapp med följade information, eller <a href="#.html">skriv ut och fyll i det här formuläret (kommer snart)</a>.
       </p>
-      <ul class="punktlista secondpunkt">
+      <ul class="bulletlist secondpoint">
         <li>Nummer på annonsen</li>
         <li>Titel och författare på boken du skickar</li>
         <li>Utgivningsår</li>
@@ -50,7 +52,8 @@
       <p class="mainp thirdp">
         När du har gjort detta, slå in boken så att den kan skickas säkert med post, och skicka den till följande adress:
       </p>
-      <address class="skickaadress">
+      <!-- ruta med adress för att skicka in böcker -->
+      <address class="mailingaddress">
         Donation</br>
         Bokmakargatan 5</br>
         56387 Kristianstad</br>
@@ -59,12 +62,12 @@
       <p class="mainp fourthp">
         Tack så mycket för att du är med och stöder världens utbildning!
       </p>
-      <aside class="mainaside">
-        <picture class="mainpicture">
-          <source media="(min-width: 1300px)" srcset="images/brev.png">
-          <img src="images/brev_small.png" class="mainimage" alt="brev">
-        </picture>
+      <picture class="mainpicture">
+        <source media="(min-width: 1300px)" srcset="images/letter.png">
+        <img src="images/letter_small.png" class="mainimage" alt="brev">
+      </picture>
     </main>
+    <!-- footer -->
     <footer>
       Alexandria AB, copyright 2021.
     </footer>

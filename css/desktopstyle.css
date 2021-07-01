@@ -1,4 +1,6 @@
+/* CSS för desktop */
 @media only screen and (min-width: 1300px) {
+  /****************** Menyn ******************/
   nav{
     width: 90vw;
     max-width: 400px;
@@ -19,42 +21,72 @@
     line-height: 1.1em;
   }
 
+/****************** Text ******************/
+h1{
+  margin-top: 2vh;
+  margin-left: 10vw;
+  text-align: left;
+  color: white;
+  font-family: "Berlin Sans FB", "Times New Roman", Times, serif;
+  font-size: 8em;
+}
 
-  .desktopgrid{
+h2{
+  font-size: 5em;
+}
+
+h3{
+  font-size: 2.7em;
+}
+
+.mainp{
+  font-size: 1.8em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/****************** Bild ******************/
+.mainimage{
+  max-height: 40vh;
+  height: auto;
+}
+
+/****************** Grids ******************/
+  .homegrid{
     display: grid;
     grid-gap: 50px;
     grid-template-areas:
-    "onehd      onehd      aside"
-    "onep       onep       aside"
-    "onepoint   onepoint   aside"
-    "twohd      twohd      aside"
-    "twop       twop       aside"
-    "twopoint   twopoint   aside"
-    "threehd    threehd    aside"
-    "threep     threep     aside"
-    "address    address    aside"
-    "fourp      fourp      aside"
+    "onehd      onehd      mainpic"
+    "onep       onep       mainpic"
+    "twohd      twohd      mainpic"
+    "twop       twop       mainpic"
+    "threehd    threehd    mainpic"
+    "threep     threep     mainpic"
+    "fourp      fourp      mainpic"
   }
 
-  .hemgrid{
+  .sendgrid{
     display: grid;
     grid-gap: 50px;
     grid-template-areas:
-    "onehd      onehd      aside"
-    "onep       onep       aside"
-    "twohd      twohd      aside"
-    "twop       twop       aside"
-    "threehd    threehd    aside"
-    "threep     threep     aside"
-    "fourp      fourp      aside"
+    "onehd      onehd      mainpic"
+    "onep       onep       mainpic"
+    "onepoint   onepoint   mainpic"
+    "twohd      twohd      mainpic"
+    "twop       twop       mainpic"
+    "twopoint   twopoint   mainpic"
+    "threehd    threehd    mainpic"
+    "threep     threep     mainpic"
+    "address    address    mainpic"
+    "fourp      fourp      mainpic"
   }
 
-  .omossgrid{
+  .aboutgrid{
     display: grid;
     grid-gap: 50px;
     grid-template-areas:
-    "onehd      onehd      aside"
-    "onep       onep       aside"
+    "onehd      onehd      mainpic"
+    "onep       onep       mainpic"
   }
 
   .firstheader{
@@ -93,58 +125,29 @@
     grid-area: twopoint;
   }
 
-  aside{
+  .mainpicture{
     margin-top: 50px;
-    grid-area: aside;
+    grid-area: mainpic;
   }
 
+  /****************** Skicka-sidan ******************/
   address{
     grid-area: address;
   }
 
-  .mainimage{
-    max-height: 40vh;
-    height: auto;
-  }
-
-  h1{
-    margin-top: 2vh;
-    margin-left: 10vw;
-    text-align: left;
-    color: white;
-    font-family: "Berlin Sans FB", "Times New Roman", Times, serif;
-    font-size: 8em;
-  }
-
-  h2{
-    font-size: 5em;
-  }
-
-  h3{
-    font-size: 2.7em;
-  }
-
-  .skickaadress{
+  .mailingaddress{
     font-size: 2em;
   }
 
-  .bokinfo > i{
-    font-size: 2.3em;
-  }
-
-  .mainp{
-    font-size: 1.8em;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .punktlista{
+  .bulletlist{
     font-size: 1.8em;
     margin-top: -2%;
     margin-bottom: -5%;
   }
 
-  .annonsgrid{
+/****************** Boklista-sidan ******************/
+/* Grid för bokannonser */
+  .requestgrid{
     display: grid;
     width: 80vw;
     margin-top: 1%;
@@ -154,19 +157,23 @@
     grid-column-gap: 2%;
   }
 
-  .bokannons{
+  .request{
     padding: 2vw;
   }
 
-  .bokomslag{
+  .bookcover{
     width: 140px;
     height: 200px;
     border-radius: 10px;
 
+  .bookinfo > i{
+    font-size: 2.3em;
+  }
 }
 
+/* Större bilder för större skärmar */
 @media only screen and (min-width: 2700px) {
-  .bokomslag{
+  .bookcover{
     width: 140px;
     height: 200px;
     border-radius: 10px;
