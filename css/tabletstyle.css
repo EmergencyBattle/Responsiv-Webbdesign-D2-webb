@@ -1,17 +1,39 @@
 /* CSS för plattor */
 @media only screen and (min-width: 850px) {
   /****************** Grid för tablet ******************/
-  .tabletgrid{
+  .tablethomegrid{
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 10px;
     grid-template-areas:
     "onehd      onehd      onehd"
     "onep       onep       mainpic"
-    "onepoint   onepoint   onepoint"
     "twohd      twohd      twohd"
     "twop       twop       twop"
-    "twopoint   twopoint   twopoint"
     "threehd    threehd    threehd"
+    "threep     threep     threep"
+    "fourp      fourp      fourp"
+  }
+
+/* Grid för bokannonser */
+  .requestgrid{
+    display: grid;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(2, 48%);
+    grid-column-gap: 4%;
+  }
+
+  .tabletsendgrid{
+    display: grid;
+    grid-gap: 10px;
+    column-gap: 5%;
+    grid-template-areas:
+    "onehd      onehd      onehd"
+    "onep       onep       mainpic"
+    "onepoint   onepoint   mainpic"
+    "twop       twop       twop"
+    "twopoint   twopoint   twopoint"
     "threep     threep     threep"
     "address    address    address"
     "fourp      fourp      fourp"
@@ -68,6 +90,8 @@
 
   h2{
     font-size: 5em;
+    margin-top: 0.2em;
+    margin-bottom: -0.1em;
   }
 
   h3{
@@ -76,6 +100,8 @@
 
   .mainp{
     font-size: 1.7em;
+    margin-top: 0em;
+    margin-bottom: 0em;
   }
 
   /****************** Menyn ******************/
@@ -99,23 +125,19 @@
 /****************** Skicka-sidan ******************/
   .mailingaddress{
     font-size: 1.7em;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 
   .bulletlist{
     font-size: 1.7em;
-  }
+    margin-top: 0em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 3em;
+    }
 
 /****************** Boklista-sidan ******************/
-/* Grid för bokannonser */
-  .requestgrid{
-    display: grid;
-    width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
-    grid-template-columns: repeat(2, 48%);
-    grid-column-gap: 4%;
-  }
-
   .request{
     width: auto;
   }
@@ -126,6 +148,11 @@
 
   .bookinfo > i{
     font-size: 1.9em;
+  }
+
+/****************** Om oss-sidan ******************/
+  .aboutimagespace{
+    margin-top: 2em;
   }
 }
 
