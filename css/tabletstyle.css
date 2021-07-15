@@ -1,12 +1,13 @@
-/* CSS för plattor */
+/* CSS for tablets */
 @media only screen and (min-width: 850px) {
-  /****************** Grid för tablet ******************/
+  /****************** Grid for tablet ******************/
   .tablethomegrid{
     display: grid;
     grid-gap: 10px;
     grid-template-areas:
     "onehd      onehd      onehd"
-    "onep       onep       mainpic"
+    "hero       hero       hero"
+    "onep       onep       onep"
     "twohd      twohd      twohd"
     "twop       twop       twop"
     "threehd    threehd    threehd"
@@ -14,7 +15,7 @@
     "fourp      fourp      fourp"
   }
 
-/* Grid för bokannonser */
+/* Grid for book request page */
   .requestgrid{
     display: grid;
     width: 80vw;
@@ -23,7 +24,7 @@
     grid-template-columns: repeat(2, 48%);
     grid-column-gap: 4%;
   }
-
+/* Grid for book sending instruction page */
   .tabletsendgrid{
     display: grid;
     grid-gap: 10px;
@@ -79,6 +80,10 @@
     grid-area: mainpic;
   }
 
+  .hero{
+    grid-area: hero;
+  }
+
   address{
     grid-area: address;
   }
@@ -86,6 +91,7 @@
   /****************** Text ******************/
   h1{
     font-size: 7em;
+    margin-top: -5px;
   }
 
   h2{
@@ -104,10 +110,11 @@
     margin-bottom: 0em;
   }
 
-  /****************** Menyn ******************/
+  /****************** Menu ******************/
   nav{
     width: 90vw;
     max-width: 370px;
+    margin-top: -60px;
   }
 
   .fa{
@@ -122,7 +129,16 @@
     line-height: 1.1em;
   }
 
-/****************** Skicka-sidan ******************/
+/****************** Images ******************/
+
+  .hero{
+    width: 100%;
+    margin-left: 0vw;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+/****************** Sending page ******************/
   .mailingaddress{
     font-size: 1.7em;
     margin-top: 1em;
@@ -137,7 +153,7 @@
     margin-right: 3em;
     }
 
-/****************** Boklista-sidan ******************/
+/****************** Book request page ******************/
   .request{
     width: auto;
   }
@@ -150,13 +166,13 @@
     font-size: 1.9em;
   }
 
-/****************** Om oss-sidan ******************/
+/****************** About page ******************/
   .aboutimagespace{
     margin-top: 2em;
   }
 }
 
-/* Gör så att bokomslagen är lite större på större plattor */
+/* makes book cover images slightly larger on larger tablets */
 @media only screen and (min-width: 1030px) {
   .bookcover{
     width: 120px;

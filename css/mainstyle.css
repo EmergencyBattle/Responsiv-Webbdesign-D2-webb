@@ -1,5 +1,5 @@
-/* CSS-bas för webbplatsen. Använder inte grid för att se till att browsers som inte stöder grid också kan få en fungerande om än simpel layout. */
-/****************** Generell Stil ******************/
+/* CSS-base for the website. Does not use grid to serve a base version of the website to browers that don't use css grid. */
+/****************** General Style ******************/
 * {
   box-sizing: border-box;
 }
@@ -21,8 +21,8 @@ main{
   width: 90vw;
   padding: 5vw;
   padding-top: 60px;
-  background-color: #FFFFBC;
-  border-radius: 10px;
+  background-color: /*#FFFFBC*/ #FFFFEF;
+  /*border-radius: 10px;*/
 }
 
 footer{
@@ -67,7 +67,7 @@ a:link{
   font-weight: 900;
 }
 
-/****************** Menyn ******************/
+/****************** Menu ******************/
 nav{
   width: 90vw;
   max-width: 320px;
@@ -125,7 +125,14 @@ nav{
   font-size: 2em;
 }
 
-/****************** Bild ******************/
+/****************** Images ******************/
+.hero{
+  width: 90vw;
+  margin-left: -2.5vw;
+  margin-top: -20px;
+  margin-bottom: -50px;
+}
+
 .mainpicture{
   width: 100%;
   margin-bottom: 5%;
@@ -137,7 +144,7 @@ nav{
   margin-right: auto;
 }
 
-/****************** Skicka-sidan ******************/
+/****************** Sending books instruction page ******************/
 .bulletlist{
   color: #313C4A;
   font-family: "Carlito", Arial, Helvetica, sans-serif;
@@ -160,7 +167,7 @@ nav{
   word-spacing: 4px;
 }
 
-/****************** Boklista-sidan ******************/
+/****************** Book request page ******************/
 .bookoverview{
   display: flex;
   flex-direction: row;
@@ -177,7 +184,7 @@ nav{
   width: 80vw;
   padding: 5vw;
   padding-top: 2vh;
-  background-color: #FFFFBC;
+  background-color: #FFFFEF;
   border-radius: 10px;
 }
 
